@@ -1,0 +1,787 @@
+
+.main-wrap { width:1200px; margin:auto; }
+.thin-pin-container { margin:20px 0 80px; position: relative; }
+.thin-pin-slide {
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.thin-pin-slide .swiper-wrapper {
+    margin:35px 55px;
+    width: calc(100% - 110px);
+    height: 115px;
+}
+.thin-pin-slide ul { display: flex; }
+.thin-pin-slide li .box { margin-right: 32px; }
+.thin-pin-slide li .box .pin-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 28px;
+    background: #F6F7FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.thin-pin-slide li .box p {
+    margin-top: 20px;
+    color: #68696B;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 114%;
+    width:80px;
+}
+[class*="pin-navbtn"] {
+    cursor: pointer;
+    background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/arrow-left.svg) no-repeat;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    transition: .2s;
+    z-index: 2;
+}
+.thin-pin-navbtn-next { transform: rotate(180deg); left: auto; right: 20px; }
+.thin-pin-slide .swiper-button-disabled { opacity: .2; cursor: inherit; }
+.main-svc-mk-ct { text-align: center; }
+.main-svc-mk-ct .item-list-cont { overflow: hidden; margin-bottom: 100px; }
+.main-svc-mk-ct .item-list-cont .top { display: flex; justify-content: space-between; margin-bottom: 32px; align-items: center; }
+.main-svc-mk-ct .item-list-cont .top p.sub-tit {
+    color: #222;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.main-svc-mk-ct .item-list-cont .top .btn-cs { display: flex; }
+.main-svc-mk-ct .item-list-cont .top .btn-cs a.btn {
+    padding:0 18px;
+    height: 40px;
+    line-height: 40px;
+    color: #68696B;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 8px;
+    box-sizing: border-box;
+    display: block;
+}
+.main-svc-mk-ct .item-list-cont .top .btn-cs a.th-blue-btn {
+    background: #E8F3FF;
+    color: #007AFF;
+    border-color: transparent;
+}
+.main-svc-mk-ct > h6 {
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+.main-svc-mk-ct > p {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.main-svc-mk-ct > .main-svc-mk-nav {
+    display: inline-flex;
+    background: #F6F7FB;
+    margin: 0 auto 50px ;
+    justify-content: space-between;
+    border-radius: 60px;
+}
+.main-svc-mk-ct > .main-svc-mk-nav > li span {
+    cursor: pointer;
+    color: #A0A0A4;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    padding:0 37px;
+    display: inline-block;
+    border-radius: 60px;
+    transition: .2s;
+}
+.main-svc-mk-ct > .main-svc-mk-nav > li.on span{
+    color:#fff;
+    background: #007AFF;
+    border-radius: 50px;
+    font-weight: 400;
+}
+.main-svc-mk-ct .type01-list, .main-svc-mk-ct .type02-list { list-style: none; margin:0 -12px; }
+.main-svc-mk-ct .type01-list li, .main-svc-mk-ct .type02-list li { float: left; }
+.main-svc-mk-ct .type01-list li .box, .main-svc-mk-ct .type02-list li .box { margin:0 12px 44px; position: relative; }
+.main-svc-mk-ct .type01-list li .box .thm, .main-svc-mk-ct .type02-list li .box .thm{
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    background: #F7F7F7 32px 56px / 70.909% 47.273% no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.main-svc-mk-ct .type01-list li .box .thm > img,
+.main-svc-mk-ct .type02-list li .box .thm > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    transform: scale(1.01);
+}
+.main-svc-mk-ct .type01-list li:first-child .box .thm { width: 468px; height: 468px; }
+.main-svc-mk-ct .type01-list li:first-child .box .txt { width: 468px; }
+.main-svc-mk-ct .type02-list li:nth-child(1) .txt,
+.main-svc-mk-ct .type02-list li:nth-child(2) .txt { width:100%; }
+.main-svc-mk-ct .type01-list li .txt, .main-svc-mk-ct .type02-list li .txt{
+    width: 220px;
+    max-height: 70px;
+    display: flex;
+    /*align-items: center;*/
+    text-align: left;
+}
+.main-svc-mk-ct .type02-list li:nth-child(1) .txt,.main-svc-mk-ct .type02-list li:nth-child(2) .txt { max-height: 100%; }
+.main-svc-mk-ct .type01-list li:first-child .box .txt p.sub,
+.main-svc-mk-ct .type02-list li:nth-child(1) .box .txt p.sub,
+.main-svc-mk-ct .type02-list li:nth-child(2) .box .txt p.sub{ font-size: 20px; font-weight: 400; margin-top:20px; }
+.main-svc-mk-ct .type01-list li .txt p.sub, .main-svc-mk-ct .type02-list li .txt p.sub{
+    color: #1C2638;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 153.333%;
+    height: 45px;
+    margin-top:16px;
+    word-break: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    overflow:hidden;
+    vertical-align:top;
+    text-overflow: ellipsis;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.main-svc-mk-ct .type01-list li .txt p.price, .main-svc-mk-ct .type02-list li .txt p.price{
+    color: #1C2638;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 31px;
+}
+.main-svc-mk-ct .type01-list li:first-child .txt p.price,
+.main-svc-mk-ct .type02-list li:nth-child(1) .txt p.price,
+.main-svc-mk-ct .type02-list li:nth-child(2) .txt p.price{ font-size: 26px; line-height: 45px; }
+.main-svc-mk-ct .type01-list li .txt p.price small, .main-svc-mk-ct .type02-list li .txt p.price small{ font-size: .8em; font-weight: 400; }
+.main-svc-mk-ct .type01-list li .txt p.price small.org-price,
+.main-svc-mk-ct .type02-list li .txt p.price small.org-price{ color: #9FA0A4; text-decoration: line-through; margin-left: 5px; }
+.main-svc-mk-ct .type01-list li .txt p.price .percent,
+.main-svc-mk-ct .type02-list li .txt p.price .percent{
+    position: absolute;
+    top:16px;
+    left:16px;
+    color:#fff;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #F04C38;
+}
+.main-svc-mk-ct .type01-list li:first-child .txt p.price .percent,
+.main-svc-mk-ct .type02-list li:nth-child(1) .txt p.price .percent,
+.main-svc-mk-ct .type02-list li:nth-child(2) .txt p.price .percent{
+    position: relative;
+    background: none;
+    color:#F04C38;
+    top:0;
+    left:0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+.main-svc-mk-ct .type02-list li .box .thm {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    background: #F7F7F7 32px 56px / 70.909% 47.273% no-repeat;
+    box-sizing: border-box;
+    position: relative;
+}
+.main-svc-mk-ct .type02-list li:nth-child(1) .box .thm,
+.main-svc-mk-ct .type02-list li:nth-child(2) .box .thm{ width: 588px; height: 340px; }
+.main-low-price-svc > h6 {
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+.main-low-price-svc > p {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main-low-price-svc .ld-link-cont {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 40px;
+}
+.main-low-price-svc .ld-link-cont li { margin:0 6px; }
+.main-low-price-svc .ld-link-cont li a {
+    border-radius: 50px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 0 37px 0 12px;
+    height: 60px;
+    line-height: 60px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    background:url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/thin-arrow-right.svg) right 22px center no-repeat;
+}
+.main-low-price-svc .ld-link-cont li a img { vertical-align: middle; margin:-4px 8px 0 0; }
+.main-low-price-svc .item-list {
+    width:calc(100% + 24px);
+    margin:0 -12px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-low-price-svc .item-list li { margin:0 12px; text-align: center; }
+.main-low-price-svc .item-list li .box {
+    width:384px;
+    height: 412px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.main-low-price-svc .item-list li .box:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.main-low-price-svc .item-list li:nth-child(1) .box:nth-child(1):before {
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg01.png);
+}
+.main-low-price-svc .item-list li:nth-child(2) .box:nth-child(1):before {
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg02.png);
+}
+.main-low-price-svc .item-list li:nth-child(3) .box:nth-child(1):before {
+    /*background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg03.png);*/
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg07.png);
+    background-size:118%;
+}
+.main-low-price-svc .item-list li:nth-child(1) .box:nth-child(2):before {
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg04.png);
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg08.png);
+}
+.main-low-price-svc .item-list li:nth-child(2) .box:nth-child(2):before {
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg05.png);
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg09.png);
+}
+.main-low-price-svc .item-list li:nth-child(3) .box:nth-child(2):before {
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg06.png);
+    background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg10.png);
+}
+.main-low-price-svc .item-list li .box:hover:before {
+    filter: blur(3px);
+}
+.main-low-price-svc .item-list li .box:last-child { margin-bottom: 0; }
+.main-low-price-svc .item-list li .box-lg { height: 532px; }
+.main-low-price-svc .item-list li .box .txt {
+    padding:40px 24px;
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    transition: .2s;
+}
+.main-low-price-svc .item-list li .box:hover .txt {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.main-low-price-svc .item-list li .box .txt h6 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+.main-low-price-svc .item-list li .box .txt p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    height: 46px;
+}
+.main-low-price-svc .item-list li .box .back-hover {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s
+}
+.main-low-price-svc .item-list li .box:hover .back-hover { opacity: 1; }
+.main-low-price-svc .item-list li .box .back-hover img { margin-bottom: 32px; }
+.main-low-price-svc .item-list li .box .back-hover a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    width:148px;
+    line-height: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    transition: .2s;
+    transform: translateY(100px);
+    margin:4px 0;
+}
+.main-low-price-svc .item-list li .box .back-hover a:nth-child(2) { margin-bottom: 8px; }
+.main-low-price-svc .item-list li .box:hover .back-hover a { transform: translateY(0); }
+.main-office-mk-cont { margin-bottom: 100px; }
+.main-office-mk-cont > h6 {
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+.main-office-mk-cont > p {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main-office-mk-cont .item-list { list-style: none; margin: 0 -12px 20px; display: inline-block; }
+.main-office-mk-cont .item-list li { float: left; }
+.main-office-mk-cont .item-list li .box { margin: 0 12px 44px; position: relative; }
+.main-office-mk-cont .item-list li .box .thm {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    background: #F7F7F7 32px 56px / 70.909% 47.273% no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.main-office-mk-cont .item-list li .box .thm > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    transform: scale(1.01);
+}
+.main-office-mk-cont .item-list li .box .thm .low-price-sale {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: #002753;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/lowPriceLabel-waterMark.png) center no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-office-mk-cont .item-list li .box .txt {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.main-office-mk-cont .item-list li .box .txt p.sub {
+    color: #1C2638;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 153.333%;
+    margin-top: 16px;
+}
+.main-office-mk-cont .item-list li .box .txt p.price {
+    color: #1C2638;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 31px;
+}
+.main-office-mk-cont .item-list li .box .txt p.price .percent {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #F04C38;
+}
+.main-office-mk-cont .item-list li .box .txt p.price small {
+    font-size: .8em;
+    font-weight: 400;
+}
+.main-office-mk-cont .item-list li .box .txt p.price small.org-price {
+    color: #9FA0A4;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.main-office-mk-cont .low-price-form {
+    position: relative;
+    text-align: right;
+    top:-70px;
+}
+.main-office-mk-cont .low-price-form > button {
+    display: none;
+    border-radius: 8px;
+    border: 1px solid #FFB5AE;
+    background: #FFEDEF;
+    color: #BC3022;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 138px;
+    height: 40px;
+    line-height: 40px;
+}
+.main-office-mk-cont .low-price-form > button > img {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.main-office-mk-cont button.more-btn {
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    width: 480px;
+    height: 80px;
+    line-height: 80px;
+    flex-shrink: 0;
+    display: block;
+    margin: auto;
+    color: #1C2638;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-office-mk-cont button.more-btn i {
+    background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/arrow-left.svg) no-repeat;
+    width:10px;
+    height: 16px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin: 0 0 -2px 9px;
+}
+
+@media screen and (max-width: 769px) {
+    /*.main-wrap { width: 100% }*/
+    .thin-pin-container { padding: 20px 12px 0 12px; margin: 0 0 8px 0; background: #fff; }
+    .thin-pin-slide { border: none; max-width:100%; overflow: inherit; }
+    .thin-pin-slide .swiper-wrapper { margin:0; width:100%; height: auto; }
+    .thin-pin-slide .swiper-wrapper .swiper-slide { width: 100%!important; }
+    .thin-pin-slide .swiper-wrapper .swiper-slide li { width: 18%; margin-right: 2%; }
+    .thin-pin-slide ul { flex-wrap: wrap; padding-bottom: 20px; }
+    .thin-pin-slide li .box { margin-right: auto; }
+    .thin-pin-slide li:nth-child(5n) .box { margin-right: 0; }
+    .thin-pin-slide li .box .pin-icon { width: 100%; height: auto; border-radius: 16px; }
+    .thin-pin-slide li .box p {
+        width: 56px;
+        font-size: 12px;
+        line-height: 100%;
+        margin:8px auto 20px;
+        letter-spacing: -1.5px;
+    }
+    .thin-pin-slide li:nth-last-child(-n+5) .box p { margin-bottom: 0; }
+    .main-svc-mk-ct { background: #fff; padding: 40px 0; }
+    .main-svc-mk-ct > h6 { font-size: 24px; line-height: 20px; margin-bottom: 8px; }
+    .main-svc-mk-ct > p { color: #9FA0A4; font-size: 15px; line-height: 23px; }
+    .main-svc-mk-ct > .main-svc-mk-nav {
+        background: none;
+        overflow-x: auto;
+        width: 100%;
+        border-radius: 0;
+        -ms-overflow-style: none; /* �명꽣�� �듭뒪�뚮줈�� */
+        scrollbar-width: none; /* �뚯씠�댄룺�� */
+        display: flex;
+    }
+    .main-svc-mk-ct > .main-svc-mk-nav::-webkit-scrollbar { display: none; }
+    .main-svc-mk-ct > .main-svc-mk-nav > li { padding: 0 12px; border-bottom: 2px solid #F6F7FB; transition: .2s; display: block; }
+    .main-svc-mk-ct > .main-svc-mk-nav > li.on { border-bottom: 2px solid #007AFF; }
+    .main-svc-mk-ct > .main-svc-mk-nav > li span {
+        min-width: 80px;
+        display: block;
+        line-height: 32px;
+        height: 32px;
+        font-size: 14px;
+        padding: 0;
+        border-radius: 0;
+        background: #fff;
+    }
+    .main-svc-mk-ct > .main-svc-mk-nav > li.on span { background: #fff; color:#007AFF; font-weight: 700; }
+    .main-svc-mk-ct > .main-svc-mk-nav { margin-bottom: 28px; }
+    .main-svc-mk-ct .item-list-cont { width:calc(100% - 32px); margin:auto; overflow: inherit; }
+    .main-svc-mk-ct .item-list-cont .top { margin-bottom: 20px; }
+    .main-svc-mk-ct .item-list-cont .top p.sub-tit { font-size: 22px; line-height: 100%; }
+    .main-svc-mk-ct .type01-list li .box, .main-svc-mk-ct .type02-list li .box { margin: 0 0 28px; width:100%; }
+    .main-svc-mk-ct .type02-list li .box { margin-bottom: 16px; display: flex; }
+    .main-svc-mk-ct .type02-list li:nth-child(1) .box,
+    .main-svc-mk-ct .type02-list li:nth-child(2) .box { display: block; }
+    .main-svc-mk-ct .type01-list li .box .thm { width: 100%; height: calc(50vw - 24px); }
+    .main-svc-mk-ct .type02-list li .box .thm { width:88px; height: 88px; margin-right: 16px; }
+    .srv-mk-slide { margin:0 -8px; }
+    .main-svc-mk-ct .type01-list, .main-svc-mk-ct .type02-list { margin: 0; }
+    .main-svc-mk-ct .type01-list li:first-child { width: calc(100% - 16px);  }
+    .main-svc-mk-ct .type01-list li, .main-svc-mk-ct .type02-list li { width:calc(50% - 16px); margin: 0 8px; }
+    .main-svc-mk-ct .type01-list li .txt, .main-svc-mk-ct .type02-list li .txt { width:100%; display: block; height: auto; }
+    .main-svc-mk-ct .type01-list li .txt p.sub, .main-svc-mk-ct .type02-list li .txt p.sub { font-size: 13px; line-height: 18px; height: 36px; }
+    .main-svc-mk-ct .type01-list li .txt p.price, .main-svc-mk-ct .type02-list li .txt p.price { font-size: 14px; line-height: 14px; margin-top:3px; }
+    .main-svc-mk-ct .type01-list li .txt p.price .percent, .main-svc-mk-ct .type02-list li .txt p.price .percent {
+        width:40px;
+        height: 40px;
+        top:12px;
+        left:12px;
+    }
+    .main-svc-mk-ct .type01-list li:first-child .box .thm { width:100%; height: calc(100vw - 32px); }
+    .main-svc-mk-ct .type01-list li:first-child .box .txt { width: 100%; }
+    .main-svc-mk-ct .type01-list li:first-child .box .txt p.sub,
+    .main-svc-mk-ct .type02-list li:nth-child(1) .box .txt p.sub,
+    .main-svc-mk-ct .type02-list li:nth-child(2) .box .txt p.sub { font-size:16px; line-height: 100%; margin-top: 20px; height: auto; }
+    .main-svc-mk-ct .type01-list li:first-child .txt p.price,
+    .main-svc-mk-ct .type02-list li:nth-child(1) .txt p.price,
+    .main-svc-mk-ct .type02-list li:nth-child(2) .txt p.price { font-size: 20px; line-height: 32px; margin-top:5px; }
+    .main-svc-mk-ct .type02-list li{ width: calc(100% - 16px); }
+    .main-svc-mk-ct .type02-list li:nth-child(1) .box .thm, .main-svc-mk-ct .type02-list li:nth-child(2) .box .thm { width: 100%; height: calc((100vw * 9 / 16) - 12px); }
+    .main-svc-mk-ct .type02-list li .txt { width: calc(100% - 104px); }
+    .main-svc-mk-ct .type02-list li .txt p.price .percent {
+        position: relative;
+        background: none;
+        color: #F04C38;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+    .main-svc-mk-ct .type02-list li .txt { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+    .main-svc-mk-ct .type02-list li .txt p.sub { margin: 0 0 5px 0; display: flex; align-items: center; margin-top:0; }
+    .main-svc-mk-ct .type02-list li:nth-child(1) .txt, .main-svc-mk-ct .type02-list li:nth-child(2) .txt { width: 100%; align-items: flex-start; }
+    .main-low-price-svc { background: #fff; margin-top:8px; padding: 40px 0; }
+    .main-low-price-svc > h6 { font-size: 24px; line-height: 100%; margin-bottom: 8px; }
+    .main-low-price-svc > p { color: #9FA0A4; font-size: 13px; line-height: 19px; margin-bottom: 28px; }
+    .main-low-price-svc .ld-link-cont { flex-wrap: wrap; margin-bottom: 30px; }
+    .main-low-price-svc .ld-link-cont li { margin:0 2px 8px; }
+    .main-low-price-svc .ld-link-cont li a {
+        height: 44px;
+        line-height: 44px;
+        padding: 0 16px 0 9px;
+        font-size: 13px;
+        background-position: right 5px center;
+    }
+    .main-low-price-svc .ld-link-cont li a img { width: 26px; margin-right:6px; }
+    .low-price-slider { margin:0 16px; }
+    .low-price-slider li .box {
+        /*width: 164px;*/
+        width:100%;
+        height: 260px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+    .low-price-slider li .box:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: .2s;
+    }
+    .low-price-slider li .box.on:before { filter: blur(3px); }
+    .low-price-slider li:nth-child(1) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg01.png);
+    }
+    .low-price-slider li:nth-child(2) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg02.png);
+    }
+    .low-price-slider li:nth-child(3) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg07.png);
+        background-size: 160%;
+    }
+    .low-price-slider li:nth-child(4) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg08.png);
+    }
+    .low-price-slider li:nth-child(5) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg09.png);
+    }
+    .low-price-slider li:nth-child(6) .box:before {
+        background-image: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/lowPriceService-bg10.png);
+    }
+    .low-price-slider li .box .txt {
+        padding: 24px 16px;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        left: 0;
+        transition: .2s;
+    }
+    .low-price-slider li .box.on .txt { opacity: 0; top:50px; }
+    .low-price-slider li .box .txt h6 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 100%;
+        margin-bottom: 6px;
+    }
+    .low-price-slider li .box .txt p {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 160%;
+    }
+    .low-price-slider li .box .back-hover {
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: .2s;
+    }
+    .low-price-slider li .box.on .back-hover { opacity: 1; display: flex; }
+    .low-price-slider li .box .back-hover img { margin-bottom: 14px; width: 70px }
+    .low-price-slider li .box .back-hover a {
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.40);
+        width: 140px;
+        line-height: 52px;
+        height: 52px;
+        box-sizing: border-box;
+        transition: .2s;
+        transform: translateY(100px);
+        margin:4px 0;
+    }
+    .low-price-slider li .box.on .back-hover a { transform: translateY(0); }
+    .low-price-slider li .box span.circle {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        border:1px solid #fff;
+        box-sizing: border-box;
+        right: 12px;
+        bottom: 12px;
+        transition: .2s;
+    }
+    .low-price-slider li .box.on span.circle { transform: rotate3d(1, 1, 1, 360deg); }
+    .low-price-slider li .box span.circle:before,
+    .low-price-slider li .box span.circle:after {
+        content: '';
+        width: 10px;
+        height: 1px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin:auto;
+        background: #fff;
+        transition: .2s;
+    }
+    .low-price-slider li .box span.circle:after { transform: rotate(90deg); }
+    .low-price-slider li .box.on span.circle:before { transform: rotate(45deg); }
+    .low-price-slider li .box.on span.circle:after { transform: rotate(135deg); }
+    .low-price-slider li .box .back-hover a:nth-child(2) { margin-bottom: 12px; }
+    .main-office-mk-cont {
+        padding:40px 16px 0;
+        margin-top:8px;
+        background-color: #fff;
+    }
+    .main-office-mk-cont > h6 { font-size: 24px; line-height: 100%; margin-bottom: 8px; }
+    .main-office-mk-cont > p {
+        color: #9FA0A4;
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 28px;
+    }
+    .main-office-mk-cont .item-list { margin: 0 -8px; }
+    .main-office-mk-cont .item-list li { margin: 0 8px; width: calc(50vw - 24px); }
+    .main-office-mk-cont .item-list li .box { margin: 0; }
+    .main-office-mk-cont .item-list li .box .thm { width: 100%; height: calc(50vw - 24px); }
+    .main-office-mk-cont .item-list li .box .thm .low-price-sale {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+        line-height: 1;
+        background-size:cover;
+        right:12px;
+        top:12px;
+    }
+    .main-office-mk-cont .item-list li .box .txt { width: 100%; display: block; height: 70px; margin-bottom: 30px; height: 51px; }
+    .main-office-mk-cont .item-list li .box .txt p.sub { font-size: 13px; line-height: 18px; }
+    .main-office-mk-cont .item-list li .box .txt p.price { font-size: 14px; line-height: 14px; }
+    .main-office-mk-cont .item-list li .box .txt p.price .percent { top: 12px; left: 12px; width: 40px; height: 40px; }
+    .main-office-mk-cont button.more-btn { width: 100%; height: 68px;  line-height: 68px; }
+    .main-twin-pagination .swiper-pagination-bullet { background-color:#EEEFF0; opacity: 1; margin:0 3px; }
+    .main-twin-pagination .swiper-pagination-bullet-active { background-color:#0D89E8; }
+}

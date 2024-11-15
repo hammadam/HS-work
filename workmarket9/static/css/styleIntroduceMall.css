@@ -1,0 +1,724 @@
+.service-ld .m_show {
+  display: none !important;
+}
+.service-ld .m_hide {
+  display: block !important;
+}
+.service-ld.pc-rental .sc01 {
+  background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/pcRental-sc01Bg.jpg) center/cover no-repeat;
+  padding: 166px 0;
+}
+.service-ld.pc-rental .sc01 .tit {
+  color: #FFF;
+  font-size: 40px;
+  display: grid;
+  gap: 33px;
+  position: relative;
+}
+.service-ld.pc-rental .sc01 .tit h4 {
+  font-weight: 500;
+  line-height: 215%;
+  letter-spacing: -0.4px;
+}
+.service-ld.pc-rental .sc01 .tit h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: -0.64px;
+}
+.service-ld.pc-rental .sc01 .tit h1 b {
+  font-weight: 800;
+}
+.service-ld.pc-rental .sc01 .tit img.deco {
+  position: absolute;
+  width: 508px;
+  right: 0;
+  top: -55px;
+  height: auto;
+  left: auto;
+}
+.service-ld.pc-rental .sc02 {
+  background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/pcRental-sc02Bg.jpg) center/cover no-repeat;
+  padding: 110px 0 144px;
+}
+.service-ld.pc-rental .sc02 img.tit-img {
+  width: 890px;
+  margin: 0 auto 40px;
+  display: block;
+}
+.service-ld.pc-rental .sc02 .items {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.service-ld.pc-rental .sc02 .items .card {
+  border-radius: 25px;
+  background: var(--Color-Base-White, #FFF);
+  box-shadow: 0px 14px 35px 0px rgba(0, 0, 0, 0.07);
+  padding: 8px 0 46px;
+  text-align: center;
+}
+.service-ld.pc-rental .sc02 .items .card img {
+  margin-bottom: 12px;
+  width: 243px;
+}
+.service-ld.pc-rental .sc02 .items .card h6 {
+  margin-bottom: 30px;
+  color: #4C4C4C;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 15px;
+}
+.service-ld.pc-rental .sc02 .items .card p {
+  color: #8E8E93;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.service-ld.pc-rental .sc03 {
+  background: #fff;
+  padding: 92px 0 110px;
+  text-align: center;
+}
+.service-ld.pc-rental .sc03 h4 {
+  color: #4C4C4C;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 172%;
+  letter-spacing: -1.5px;
+  margin-bottom: 53px;
+}
+.service-ld.pc-rental .sc03 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.service-ld.pc-rental .sc03 ul li {
+  height: 240px;
+  border-right: 1px solid #C5C5C5;
+}
+.service-ld.pc-rental .sc03 ul li .area {
+  padding: 32px 0 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 172px;
+}
+.service-ld.pc-rental .sc03 ul li .area p {
+  color: #4C4C4C;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 62.5%;
+}
+.service-ld.pc-rental .sc03 ul li:last-child {
+  border-right: none;
+}
+.service-ld.pc-rental .sc04 {
+  background: #F8F8F8;
+  padding: 80px 0 66px;
+  text-align: center;
+}
+.service-ld.pc-rental .sc04 h4 {
+  color: #4C4C4C;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 172%;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+.service-ld.pc-rental .sc04 .table-cs p {
+  color: #A8A8A8;
+  text-align: right;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 173%;
+  letter-spacing: -0.78px;
+}
+.service-ld.pc-rental .sc04 .table-cs p b.blue {
+  font-weight: 800;
+  color: #007AFF;
+}
+.service-ld.pc-rental .sc04 .table-cs table {
+  margin-top: 27px;
+  border-collapse: collapse;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr th, .service-ld.pc-rental .sc04 .table-cs table tr td {
+  border: 1px solid #C5C5C5;
+  height: 112px;
+  color: #4C4C4C;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 173%;
+  letter-spacing: -0.78px;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr th:first-child, .service-ld.pc-rental .sc04 .table-cs table tr td:first-child {
+  border-left: none;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr th:last-child, .service-ld.pc-rental .sc04 .table-cs table tr td:last-child {
+  border-right: none;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr th {
+  background: rgba(0, 122, 255, 0.06);
+  color: #007AFF;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr:first-child th, .service-ld.pc-rental .sc04 .table-cs table tr:first-child td {
+  border-top: none;
+}
+.service-ld.pc-rental .sc04 .table-cs table tr:last-child th, .service-ld.pc-rental .sc04 .table-cs table tr:last-child td {
+  border-bottom: none;
+}
+.service-ld.pc-rental .sc04 .table-cs .btn-cs {
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+}
+.service-ld.pc-rental .sc04 .table-cs .btn-cs a.gray-outln-btn {
+  width: 166px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  box-sizing: border-box;
+  color: #AEAEB2;
+  border: 1px solid #AEAEB2;
+}
+.service-ld.pc-rental .sc05 {
+  background: #D9E9FF;
+  padding: 94px 0 211px;
+  position: relative;
+  overflow: hidden;
+}
+.service-ld.pc-rental .sc05 .deco-earth {
+  width: 1325px;
+  position: absolute;
+  top: 37px;
+  left: -24vw;
+  z-index: 0;
+}
+.service-ld.pc-rental .sc05 .main-wrap {
+  position: relative;
+  z-index: 1;
+}
+.service-ld.pc-rental .sc05 .main-wrap h4 {
+  color: #4C4C4C;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 172%;
+  letter-spacing: -1.5px;
+  margin-bottom: 60px;
+}
+.service-ld.pc-rental .sc05 .main-wrap h4 b {
+  font-weight: 800;
+}
+.service-ld.pc-rental .sc05 .main-wrap .items {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.service-ld.pc-rental .sc05 .main-wrap .items .card {
+  border-radius: 25px;
+  background: var(--Color-Base-White, #FFF);
+  box-shadow: 0px 14px 35px 0px rgba(0, 0, 0, 0.07);
+  padding: 58px 0 48px;
+  text-align: center;
+  height: 331px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-ld.pc-rental .sc05 .main-wrap .items .card img {
+  margin-bottom: 12px;
+}
+.service-ld.pc-rental .sc05 .main-wrap .items .card h6 {
+  margin-bottom: 30px;
+  color: #4C4C4C;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 15px;
+}
+.service-ld.pc-rental .sc05 .main-wrap .items .card p {
+  color: #8E8E93;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.service-ld.pc-rental .sc05 .ud-label {
+  background: rgba(0, 122, 255, 0.56);
+  position: absolute;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+.service-ld.pc-rental .sc05 .ud-label .btn-cs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.service-ld.pc-rental .sc05 .ud-label .btn-cs p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 268%;
+  letter-spacing: -0.96px;
+}
+.service-ld.pc-rental .sc05 .ud-label .btn-cs p b {
+  font-weight: 800;
+}
+.service-ld.pc-rental .sc05 .ud-label .btn-cs a {
+  color: #AEAEB2;
+  border: 1px solid #AEAEB2;
+  width: 166px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.service-ld.pc-rental .sc06 {
+  background: #F8F8F8;
+  padding: 130px 0;
+}
+.service-ld.pc-rental .sc06 .tit {
+  position: relative;
+  margin: auto;
+}
+.service-ld.pc-rental .sc06 .tit svg {
+  margin: auto;
+  display: block;
+}
+.service-ld.pc-rental .sc06 .tit h2 {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4C4C4C;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 86px;
+  letter-spacing: -1.5px;
+  top: 0;
+}
+.service-ld.pc-rental .sc06 .cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0 110px;
+}
+.service-ld.pc-rental .sc06 .cont .txt {
+  display: grid;
+  gap: 35px;
+}
+.service-ld.pc-rental .sc06 .cont .txt p {
+  color: #4C4C4C;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1.5px;
+}
+.service-ld.pc-rental .sc06 .cont .txt p .blue {
+  color: #007AFF;
+}
+.service-ld.pc-rental .sc06 .btn-cs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.service-ld.pc-rental .sc06 .btn-cs a {
+  width: 166px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+  box-sizing: border-box;
+}
+.service-ld.pc-rental .sc06 .btn-cs a.df-btn {
+  border: 1px solid #AEAEB2;
+  background: #fff;
+  color: #AEAEB2;
+}
+.service-ld.pc-rental .sc06 .btn-cs a.blue-btn {
+  background: #0E89E8;
+  color: #fff;
+}
+.service-ld.pc-rental .sc07 {
+  background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/pcRental-sc07Bg.jpg) center/cover;
+  text-align: center;
+  padding: 140px 0;
+}
+.service-ld.pc-rental .sc07 .tit {
+  position: relative;
+}
+.service-ld.pc-rental .sc07 .tit h1 {
+  color: #fff;
+  font-family: "PT Sans Caption";
+  font-size: 300px;
+  font-weight: 400;
+  letter-spacing: -9px;
+  line-height: 1;
+  height: 130px;
+}
+.service-ld.pc-rental .sc07 .tit h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -1.92px;
+}
+.service-ld.pc-rental .sc07 .tit h2 b {
+  border-bottom: 5px solid #fff;
+}
+.service-ld.pc-rental .sc08 {
+  background: #F8F8F8;
+  padding: 108px;
+}
+.service-ld.pc-rental .sc08 .link-cs {
+  border-radius: 14px;
+  background: #007AFF;
+  box-shadow: 0px 14px 35px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 176px;
+  padding: 0 70px;
+}
+.service-ld.pc-rental .sc08 .link-cs .tit {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.96px;
+}
+.service-ld.pc-rental .sc08 .link-cs .tit b {
+  font-weight: 800;
+}
+.service-ld.pc-rental .sc08 .link-cs a {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 215%;
+  letter-spacing: -1.2px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+.service-ld.pc-rental .sc08 .link-cs a span {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.service-ld.pc-rental .sc08 .link-cs a span svg {
+  margin-left: 5px;
+}
+.service-ld.pc-rental .sc09 {
+  height: 1529px;
+  position: relative;
+  background: #F8F8F8;
+}
+.service-ld.pc-rental .sc09:before {
+  content: "";
+  display: block;
+  background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/pcRental-sc09Bg.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 614px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-ld.pc-rental .sc09 img {
+  position: relative;
+  z-index: 2;
+}
+.service-ld.pc-rental .sc09 p {
+  color: #8E8E93;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.service-ld.pc-rental .sc09 a {
+  border-radius: 8px;
+  background: #C75AF6;
+  width: 175px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 50px auto 95px;
+}
+
+@media (max-width: 769px) {
+  .main-wrap {
+    width: 100%;
+  }
+  .service-ld .m_show {
+    display: block !important;
+  }
+  .service-ld .m_hide {
+    display: none !important;
+  }
+  .service-ld.pc-rental {
+    /*.sc08 { padding: 35px 25px;
+      .link-cs { height: 84px; padding: 0 24px;
+        .tit { font-size: 16px }
+        a { font-size: 16px;
+          span { width: 12px; height: 12px;
+            svg { margin-left: 5px }
+          }
+        }
+      }
+    }*/
+  }
+  .service-ld.pc-rental .sc01 {
+    background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/m_pcRental-sc01Bg.jpg) center/cover no-repeat;
+    padding: 0;
+    height: 400px;
+  }
+  .service-ld.pc-rental .sc01 .tit {
+    padding: 85px 0 0 26px;
+    gap: 12px;
+  }
+  .service-ld.pc-rental .sc01 .tit h4 {
+    font-size: 18px;
+    font-width: 500;
+    line-height: 225%;
+  }
+  .service-ld.pc-rental .sc01 .tit h1 {
+    font-size: 28px;
+  }
+  .service-ld.pc-rental .sc01 .tit h1 b {
+    font-weight: 800;
+  }
+  .service-ld.pc-rental .sc01 .tit img.deco {
+    width: 197px;
+    right: 18px;
+    bottom: -79px;
+    top: auto;
+  }
+  .service-ld.pc-rental .sc02 {
+    padding: 42px 25px 62px;
+  }
+  .service-ld.pc-rental .sc02 img.tit-img {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .service-ld.pc-rental .sc02 .items {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .service-ld.pc-rental .sc02 .items .card {
+    border-radius: 25px;
+    background: var(--Color-Base-White, #FFF);
+    box-shadow: 0px 14px 35px 0px rgba(0, 0, 0, 0.07);
+    padding: 8px 0 46px;
+    text-align: center;
+  }
+  .service-ld.pc-rental .sc02 .items .card img {
+    margin-bottom: 0;
+    width: 43%;
+  }
+  .service-ld.pc-rental .sc02 .items .card h6 {
+    margin-bottom: 26px;
+    font-size: 18px;
+  }
+  .service-ld.pc-rental .sc02 .items .card p {
+    font-size: 16px;
+  }
+  .service-ld.pc-rental .sc03 {
+    padding: 58px 25px 50px;
+  }
+  .service-ld.pc-rental .sc03 h4 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .service-ld.pc-rental .sc03 ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .service-ld.pc-rental .sc03 ul li {
+    height: 158px;
+    margin-bottom: 24px;
+  }
+  .service-ld.pc-rental .sc03 ul li .area {
+    padding: 24px 0;
+    height: 124px;
+  }
+  .service-ld.pc-rental .sc03 ul li .area img {
+    width: 75%;
+  }
+  .service-ld.pc-rental .sc03 ul li .area p {
+    font-size: 16px;
+  }
+  .service-ld.pc-rental .sc03 ul li:nth-child(3n) {
+    border-right: none;
+  }
+  .service-ld.pc-rental .sc04 {
+    padding: 60px 25px 37px;
+  }
+  .service-ld.pc-rental .sc04 h4 {
+    text-align: left;
+    font-size: 28px;
+  }
+  .service-ld.pc-rental .sc04 .table-cs p {
+    font-size: 14px;
+  }
+  .service-ld.pc-rental .sc04 .table-cs table {
+    margin-top: 10px;
+  }
+  .service-ld.pc-rental .sc04 .table-cs table tr th, .service-ld.pc-rental .sc04 .table-cs table tr td {
+    height: 60px;
+    font-size: 14px;
+  }
+  .service-ld.pc-rental .sc04 .table-cs table tr td:nth-child(1) {
+    width: 50%;
+  }
+  .service-ld.pc-rental .sc04 .table-cs table tr td:nth-child(2),
+  .service-ld.pc-rental .sc04 .table-cs table tr td:nth-child(3) {
+    width: 25%;
+  }
+  .service-ld.pc-rental .sc04 .table-cs .btn-cs {
+    margin-top: 40px;
+  }
+  .service-ld.pc-rental .sc04 .table-cs .btn-cs a.gray-outln-btn {
+    font-size: 14px;
+  }
+  .service-ld.pc-rental .sc05 {
+    padding: 65px 25px 160px;
+  }
+  .service-ld.pc-rental .sc05 .deco-earth {
+    width: 1325px;
+    position: absolute;
+    top: 37px;
+    left: -24vw;
+    z-index: 0;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap h4 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap .items {
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap .items .card {
+    border-radius: 25px;
+    padding: 0 35px;
+    height: 198px;
+    flex-direction: row;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap .items .card img {
+    width: 155px;
+    margin: 0 30px 0 0;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap .items .card h6 {
+    font-size: 16px;
+  }
+  .service-ld.pc-rental .sc05 .main-wrap .items .card p {
+    font-size: 16px;
+  }
+  .service-ld.pc-rental .sc05 .ud-label {
+    height: 150px;
+  }
+  .service-ld.pc-rental .sc05 .ud-label .btn-cs {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .service-ld.pc-rental .sc05 .ud-label .btn-cs p {
+    font-size: 16px;
+  }
+  .service-ld.pc-rental .sc05 .ud-label .btn-cs a {
+    font-size: 15px;
+  }
+  .service-ld.pc-rental .sc06 {
+    padding: 50px 25px;
+  }
+  .service-ld.pc-rental .sc06 .tit svg {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .service-ld.pc-rental .sc06 .tit h2 {
+    font-size: 18px;
+  }
+  .service-ld.pc-rental .sc06 .cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 24px 0 36px;
+  }
+  .service-ld.pc-rental .sc06 .cont .txt {
+    display: grid;
+    gap: 30px;
+  }
+  .service-ld.pc-rental .sc06 .cont .txt p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .service-ld.pc-rental .sc07 {
+    background: url(https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/landing/pcRental-sc07Bg.jpg) center/cover;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .service-ld.pc-rental .sc07 .tit {
+    position: relative;
+  }
+  .service-ld.pc-rental .sc07 .tit h1 {
+    font-size: 100px;
+    height: 60px;
+  }
+  .service-ld.pc-rental .sc07 .tit h2 {
+    font-size: 22px;
+  }
+  .service-ld.pc-rental .sc09 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .service-ld.pc-rental .sc09:before {
+    height: 24.5%;
+  }
+  .service-ld.pc-rental .sc09 img {
+    width: calc(100% - 50px);
+    margin: auto;
+  }
+  .service-ld.pc-rental .sc09 p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .service-ld.pc-rental .sc09 a {
+    font-size: 14px;
+    margin: 40px auto 0;
+  }
+}
