@@ -995,6 +995,7 @@
     }
 
     .product{
+      margin-top:20px;
       border:0;
       padding:0;
 
@@ -1807,6 +1808,8 @@
       }
 
       .product{
+        margin-top:8px;
+
         ul{
           @include mix.gridbox(4, 8px, 24px);
           grid-template-rows: repeat(2, minmax(20px, auto));
@@ -2016,3 +2019,23 @@
 
 
 
+@media all and (max-width:400px){
+  .introduce_mall {
+    .sec05 {
+      .plan {
+        .plan_charged{
+          gap:4px;
+        }
+
+        .plan_con_area {
+          .plan_con_area_inner{
+            padding:20px 6px 40px;
+          }
+          .plan_badge{
+            letter-spacing: -0.4px;
+          }
+        }
+      }
+    }
+  }
+}
