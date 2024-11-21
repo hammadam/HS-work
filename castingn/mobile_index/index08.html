@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8번 Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/scmStyle.scss">
+  <link rel="stylesheet" href="/src/scss/mroMall_style.scss">
+  <link rel="stylesheet" href="/src/scss/mobileCoupon.scss">
+  <style>
+    .main-wrap{width:1200px;margin:0 auto;}
+    .hidden{display:none;}
+  </style>
+</head>
+<body>
+<div class="mobile-coupon-container">
+    <div class="main-wrap">
+        <div class="flx_vct_g4 pt32 t14_w-sm gray400">
+            <span>홈</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                <path d="M13.5683 9.0343C13.8807 8.72188 14.3873 8.72188 14.6997 9.0343L21.0997 15.4343C21.4121 15.7467 21.4121 16.2533 21.0997 16.5657L14.6997 22.9657C14.3873 23.2781 13.8807 23.2781 13.5683 22.9657C13.2559 22.6533 13.2559 22.1467 13.5683 21.8343L19.4026 16L13.5683 10.1657C13.2559 9.85325 13.2559 9.34672 13.5683 9.0343Z" fill="#101010"></path>
+            </svg>
+            <span>구매요청</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                <path d="M13.5683 9.0343C13.8807 8.72188 14.3873 8.72188 14.6997 9.0343L21.0997 15.4343C21.4121 15.7467 21.4121 16.2533 21.0997 16.5657L14.6997 22.9657C14.3873 23.2781 13.8807 23.2781 13.5683 22.9657C13.2559 22.6533 13.2559 22.1467 13.5683 21.8343L19.4026 16L13.5683 10.1657C13.2559 9.85325 13.2559 9.34672 13.5683 9.0343Z" fill="#101010"></path>
+            </svg>
+            <span>모바일 상품권 관리</span>
+        </div>
+        <div class="flx_btw_vct pt40 pb12 mb16">
+            <h4 class="t20_w-lg-line gray800">모바일 상품권 관리</h4>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="main-wrap">
+            <div class="dashboard_tab flx_vct gray900">
+                <button class="py12 px16 on">Dashboard</button>
+                <button class="py12 px16">발송 내역</button>
+            </div>
+        </div>
+        <div class="dashboard_content grid_g24 py32">
+            <div class="main-wrap grid_g24">
+                <div class="card bd-gray50_ipt">
+                    <div class="flx_vct_g16 pd12">
+                        <h6 class="dashboard_tit t14_w-lg">대상 기간</h6>
+                        <div class="info">
+                            <div class="flx_vct_g4">
+                                <div class="rel">
+                                    <input type="text" class="data-input_lg datepicker" size="10" placeholder="YYYY-MM-DD" value="" id="">
+                                </div>
+                                <small class="t14 gray900">~</small>
+                                <div class="rel">
+                                    <input type="text" class="data-input_lg datepicker" size="10" placeholder="YYYY-MM-DD" value="" id="">
+                                </div>
+                                <button class="df-btn_md">지난달</button>
+                                <button class="df-btn_md">이번달</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bd-gray50_ipt">
+                    <div class="pd12">
+                        <h6 class="dashboard_tit line t14_w-lg">기간 내 총 이용 합계</h6>
+                        <div class="flx_btw_vct_g12">
+                            <div class="card flx_btw_vct fx1">
+                                <span>주문 인원</span>
+                                <p class="t16_w-sm"><span class="t24_w-lg gray400">10,000,000</span>명</p>
+                            </div>
+                            <div class="card flx_btw_vct fx1">
+                                <span>주문 횟수</span>
+                                <p class="t16_w-sm"><span class="t24_w-lg green400">{주문의 수}</span>회</p>
+                            </div>
+                            <div class="card flx_btw_vct fx1">
+                                <span>이용금액 합계</span>
+                                <p class="t16_w-sm"><span class="t24_w-lg blue500">{이용금액 표기}</span>원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_1/2_g24">
+                    <div class="card bd-gray50_ipt">
+                        <div class="py24 px12">
+                            <h6 class="dashboard_tit line t14_w-lg">부서별 이용금액</h6>
+                            <div class="center pt24 pb48 px16">
+                                <p class="t16_w-sm lh24 gray800">
+                                    최대 이용부서는 <b>{부서명}</b>으로
+                                    <br />
+                                    <b>{주문자의 수}</b>명이 <b>{주문건수}</b>회의 주문으로
+                                    <br />
+                                    <b class="blue500">{이용금액 표기}</b>원이 사용되었습니다.
+                                </p>
+                            </div>
+                            <div class="table_list_box t14_w-sm">
+                                <ul>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">1.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">10,000,000</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">8,000</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">810,000,000</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">50</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">2.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">5,567</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">400</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">40,000,000</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">8</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">3.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">4.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">5.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">6.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">7.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">8.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">9.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">10.</span></li>
+                                            <li class="fx1"><span class="emphatic">{부서명}</span></li>
+                                            <li><span class="emphatic">{이용자 수}</span><span class="gray500">명</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{주문건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-gray50_ipt">
+                        <div class="py24 px12">
+                            <h6 class="dashboard_tit line t14_w-lg">개인별 이용금액</h6>
+                            <div class="center pt24 pb48 px16">
+                                <p class="t16_w-sm lh24 gray800">
+                                    최대 이용자는 <b>{사용자 이름}/{직책}</b>으로
+                                    <br />
+                                    <b>{주문의 수}</b>회의 주문으로
+                                    <br />
+                                    <b class="green400">{이용금액 표기}</b>원이 사용되었습니다.
+                                </p>
+                            </div>
+                            <div class="table_list_box t14_w-sm">
+                                <ul>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">1.</span></li>
+                                            <li class="fx1"><span class="emphatic">조정훈(책임)</span></li>
+                                            <li>354<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>760,800<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>13<span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">2.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">3.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">4.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">5.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">6.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">7.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">8.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">9.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">10.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li>{주문건수}<span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li>{이용금액}<span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-gray50_ipt max_sender">
+                        <div class="py24 px12">
+                            <h6 class="dashboard_tit line t14_w-lg">최대 발신자</h6>
+                            <div class="flx_ct my32">
+                                <div class="switch_btn">
+                                    <button class="t16_w-md on">금액 기준</button>
+                                    <button class="t16_w-md">발신건수 기준</button>
+                                </div>
+                            </div>
+                            <div class="chart_area bg-gray100" style="height:240px;"></div>
+                            <div class="pt20 pb8">
+                                <p class="t14_w-sm gray600">총 <b class="gray900">{총 인원}명</b>의 발송자</p>
+                            </div>
+                            <div class="table_list_box t14_w-sm">
+                                <ul>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">1.</span></li>
+                                            <li class="fx1"><span class="emphatic">조정훈(책임)</span></li>
+                                            <li><span class="emphatic">154</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">590,800</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">12</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">2.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">3.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="on">
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">4.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">5.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">6.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">7.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">8.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">9.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">10.</span></li>
+                                            <li class="fx1"><span class="emphatic">{이름}({직책})</span></li>
+                                            <li><span class="emphatic">{발송건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{이용금액}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-gray50_ipt max_receiver">
+                        <div class="py24 px12">
+                            <h6 class="dashboard_tit line t14_w-lg">최대 수신자</h6>
+                            <div class="flx_ct my32">
+                                <div class="switch_btn">
+                                    <button class="t16_w-md on">금액 기준</button>
+                                    <button class="t16_w-md">수신건수 기준</button>
+                                </div>
+                            </div>
+                            <div class="chart_area bg-gray100" style="height:240px;"></div>
+                            <div class="pt20 pb8">
+                                <p class="t14_w-sm gray600">총 <b class="gray900">{총 인원}명</b>의 수신자</p>
+                            </div>
+                            <div class="table_list_box t14_w-sm">
+                                <ul>
+                                    <li class="on">
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">1.</span></li>
+                                            <li class="fx1"><span class="emphatic">010****-5678</span></li>
+                                            <li><span class="emphatic">154</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">590,800</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">12</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">2.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">3.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">4.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">5.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">6.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">7.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">8.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">9.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="table_list_ul">
+                                            <li class="num"><span class="emphatic">10.</span></li>
+                                            <li class="fx1"><span class="emphatic">{연락처-표기}</span></li>
+                                            <li><span class="emphatic">{수신건수}</span><span class="gray500">회</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{금액표기}</span><span class="gray500">원</span></li>
+                                            <li class="gray500">/</li>
+                                            <li><span class="emphatic">{비중}</span><span class="gray500">%</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function(){
+      cateReSzie();//사이즈 측정 - 카테고리 로드후 실행하도록 작업
+      $("[data-mousewheel='true']").on('mousewheel',function(e){
+          if($(this).children("ul").innerWidth() > 1200){
+              e.stopPropagation()
+              e.stopImmediatePropagation()
+              const wheelArea = $(this).children("ul").offset().left;
+              if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+                  if(wheelArea < 0) wheelDelta = wheelDelta + 100;
+                  else wheelDelta = 0;
+              }else{
+                  if($(this).children("ul").innerWidth() < wheelArea ) wheelDelta = wheelDelta - 100;
+                  else wheelDelta = 1200 + -($(this).children("ul").innerWidth());
+              }
+              $(this).children("ul").animate({left: wheelDelta}, 100);
+              return false;
+          }
+      });
+  })
+  function cateReSzie() {
+      let cateSize = $(".category-cs .depth1-area ul li").innerWidth();
+      let cateLength = $(".category-cs .depth1-area ul li").length;
+      let cateSize2 = $(".category-cs .depth2-area ul li").innerWidth();
+      let cateLength2 = $(".category-cs .depth2-area ul li").length;
+      $(".category-cs .depth1-area ul").innerWidth(cateSize * cateLength);
+      $(".category-cs .depth2-area ul").innerWidth((cateSize2 + 8) * cateLength2 );
+  }
+  function activeCate(el) {
+      $("[data-mousewheel='true']").find("a").removeClass('active');
+      $(el).addClass('active');
+  }
+</script>
+<script>
+    document.querySelectorAll('.switch_btn button').forEach(button => {
+        button.addEventListener('click', () => {
+            // 모든 버튼에서 'on' 클래스를 제거하여 초기화합니다.
+            button.parentElement.querySelectorAll('button').forEach(btn => btn.classList.remove('on'));
+
+            // 클릭한 버튼에만 'on' 클래스를 추가합니다.
+            button.classList.add('on');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>52번</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/scss/scmStyle.scss">
+    <link rel="stylesheet" href="/src/scss/mroMall_style.scss">
+    <link rel="stylesheet" href="/src/scss/mobileCoupon.scss">
+    <style>
+        .hidden{display:none;}
+        .red{color:#F05046;}
+
+        .basket-wrap {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            display: flex;
+            box-sizing: border-box;
+            border-radius: 8px 8px 0 0;
+            border-bottom: none;
+        }
+        .lnb {
+            width: 180px;
+            border: 1px solid #d9d9d9;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .lnb .lnb-item{margin: 0 10px 0 23px; border-bottom: 1px solid #e7e9eb; padding-bottom: 10px;}
+        .lnb .lnb-item:last-child{border-bottom: none;}
+        .lnb .lnb-item .lnb-tit { margin-top:10px }
+        .lnb .lnb-item .lnb-tit a {
+            font-size: 18px;
+            color: #010101;
+            font-weight: 800;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+        }
+        .lnb .lnb-item .sub-lnb-wrap ul > li > a {
+            font-size: 15px;
+            color: #333333;
+            padding: 10px 0 10px 23px;
+            display: block;
+            margin: 0 -23px;
+            width: calc(100% + 9px);
+        }
+        .cpif-item-wrap {
+            width: calc(100% - 180px);
+            height: auto;
+            padding: 8px 0 8px 24px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="basket-wrap">
+        <!-- lnb -->
+        <div class="lnb">
+            <div class="lnb-item">
+                <div class="lnb-tit">
+                    <a href="" class="lnb-link">AA</a>
+                </div>
+                <div class="sub-lnb-wrap">
+                    <ul>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cpif-item-wrap imprvmt-ct">
+            <div class="mobile-coupon-container">
+                <div class="main-wrap">
+                    <div class="flx_btw_vct pt40 pb12 mb16 bdb-gray100">
+                        <h4 class="t20_w-lg-line gray800">수신자 관리</h4>
+                    </div>
+                    <div class="flx_btw_vct pt40 pb12 mb16">
+                        <h4 class="gray800 t18-line_w-lg mb12">기본 정보</h4>
+                        <table class="slim-colums-table-cs round w-full">
+                            <colgroup>
+                                <col width="160px"/>
+                                <col />
+                                <col width="160px"/>
+                                <col />
+                            </colgroup>
+                            <tbody class="col_lg">
+                                <tr>
+                                    <th>연락처<span class="red">*</span></th>
+                                    <td><input type="text" placeholder="01012345679" class="df-input_sm w-full"></td>
+                                    <th>이름</th>
+                                    <td><input type="text" placeholder="조정훈" class="df-input_sm w-full"></td>
+                                </tr>
+                                <tr>
+                                    <th>기업명</th>
+                                    <td><input type="text" placeholder="캐스팅엔" class="df-input_sm w-full"></td>
+                                    <th>부서명</th>
+                                    <td><input type="text" placeholder="기획팀" class="df-input_sm w-full"></td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td colspan="3">
+                                        <div class="flx_btw_vct_g12 mb12">
+                                            <input type="text" placeholder="서울시 마포구 마포대로 122 프론트원 16층" class="df-input_sm fx1">
+                                            <button type="button" class="df-btn_sm">주소 검색</button>
+                                        </div>
+                                        <input type="text" placeholder="" class="df-input_sm w-full">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flx_ct_vct_g12 py40">
+                        <button type="button" class="df-btn_xl" style="width:116px;">취소</button>
+                        <button type="button" class="black-btn_xl" style="width:116px;">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

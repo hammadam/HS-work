@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>60번</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/scss/scmStyle.scss">
+    <link rel="stylesheet" href="/src/scss/mroMall_style.scss">
+    <link rel="stylesheet" href="/src/scss/mobileCoupon.scss">
+    <style>
+        .hidden{display:none;}
+        .red{color:#F05046;}
+        .fx2 {
+            flex: 2;
+        }
+        .fx3 {
+            flex: 3;
+        }
+        .basket-wrap {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            display: flex;
+            box-sizing: border-box;
+            border-radius: 8px 8px 0 0;
+            border-bottom: none;
+        }
+        .lnb {
+            width: 180px;
+            border: 1px solid #d9d9d9;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .lnb .lnb-item{margin: 0 10px 0 23px; border-bottom: 1px solid #e7e9eb; padding-bottom: 10px;}
+        .lnb .lnb-item:last-child{border-bottom: none;}
+        .lnb .lnb-item .lnb-tit { margin-top:10px }
+        .lnb .lnb-item .lnb-tit a {
+            font-size: 18px;
+            color: #010101;
+            font-weight: 800;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+        }
+        .lnb .lnb-item .sub-lnb-wrap ul > li > a {
+            font-size: 15px;
+            color: #333333;
+            padding: 10px 0 10px 23px;
+            display: block;
+            margin: 0 -23px;
+            width: calc(100% + 9px);
+        }
+        .cpif-item-wrap {
+            width: calc(100% - 180px);
+            height: auto;
+            padding: 8px 0 8px 24px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="basket-wrap">
+        <!-- lnb -->
+        <div class="lnb">
+            <div class="lnb-item">
+                <div class="lnb-tit">
+                    <a href="" class="lnb-link">AA</a>
+                </div>
+                <div class="sub-lnb-wrap">
+                    <ul>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                        <li><a href="">aa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cpif-item-wrap imprvmt-ct">
+            <div class="mobile-coupon-container">
+                <div class="main-wrap">
+                    <div class="flx_btw_vct pt40 pb12 mb16 bdb-gray100">
+                        <h4 class="t20_w-lg-line gray800">주문내역 상세</h4>
+                    </div>
+                    <div class="flx_btw_vct px12">
+                        <div class="flx_vct_g8 pt12 pb12">
+                            <small class="t16_w-sm">yyyy-mm-dd <b class="blue500">구매요청</b></small>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                                <path d="M13.5683 9.0343C13.8807 8.72188 14.3873 8.72188 14.6997 9.0343L21.0997 15.4343C21.4121 15.7467 21.4121 16.2533 21.0997 16.5657L14.6997 22.9657C14.3873 23.2781 13.8807 23.2781 13.5683 22.9657C13.2559 22.6533 13.2559 22.1467 13.5683 21.8343L19.4026 16L13.5683 10.1657C13.2559 9.85325 13.2559 9.34672 13.5683 9.0343Z" fill="#101010"></path>
+                            </svg>
+                            <small class="t16_w-sm">yyyy-mm-dd <b class="blue500">결제일자</b></small>
+                        </div>
+                        <div>
+                            <small class="t12_w-sm gray600"><b>주문번호 : </b>2024071500065</small>
+                        </div>
+                    </div>
+
+                    <h6 class="px16 t18_w-lg my12">과세 상품</h6>
+                    <div class="taxable-item-box" style="background:none;border:0;">
+                        <div class="grid_g12 pb24">
+                            <div class="item-info-cs card_rd8 bg-white py12_ipt px24_ipt">
+                                <div class="flx_btw_vct mb8 bdb-gray400">
+                                    <div class="flx_vct_g12">
+                                        <div class="cpn-logo">
+                                            <img src="https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/mro/sub/sub-ct-logo.png" alt="" width="32" height="32">
+                                        </div>
+                                        <h6 class="t16_w-lg gray700">업무마켓9 – 모바일 상품권</h6>
+                                    </div>
+                                    <div class="flx_vct_g12">
+                                        <strong class="t12_w-lg gray900">주문 완료</strong>
+                                    </div>
+                                </div>
+                                <div class="dt-cs" style="grid-template-columns: 1fr 140px 140px;padding-right:0;">
+                                    <div class="flx_vct_g24">
+                                        <div class="thm">
+                                            <img src="https://castingn-mall.s3.ap-northeast-2.amazonaws.com/static/images/main-renew23/serviceMarket-items/serviceMarket-mobileCoupon-02.png" width="94" height="94" alt="">
+                                        </div>
+                                        <div class="dt-text">
+                                            <small class="t12_w-sm gray600">[해당 상품의 브랜드 정보 표기]</small>
+                                            <div class="t16_w-md gray700 elps2 mb8">{상품명 표기 영역으로 사용됩니다.}</div>
+                                            <div class="flx_vct_g4 t16"><strong>{상품의 가격표기}</strong>원<span class="green400"><strong>{할인율 표기}</strong>%</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="t18_w-lg flx_vct_ct_g8 right">수량 : 2</div>
+                                    <div class="flx_ed_vct">
+                                        <button class="df-btn_sm">주문취소</button>
+                                    </div>
+                                </div>
+                                <div class="price-cs bdt-gray400">
+                                    <div class="py16 px24">
+                                        <div class="flx_vct_ct_g40">
+                                            <div class="price-box center">
+                                                <small class="gray600 t12_w-sm">상품금액</small>
+                                                <div class="gray900 t16_w-sm"><strong>{금액표기}</strong>원</div>
+                                            </div>
+                                            <div>
+                                                <span class="order-circle bg-gray50">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M12.6006 6.39999C12.6006 6.06862 12.332 5.79999 12.0006 5.79999C11.6692 5.79999 11.4006 6.06862 11.4006 6.39999V11.4H6.40078C6.06941 11.4 5.80078 11.6686 5.80078 12C5.80078 12.3314 6.06941 12.6 6.40078 12.6H11.4006V17.6C11.4006 17.9314 11.6692 18.2 12.0006 18.2C12.332 18.2 12.6006 17.9314 12.6006 17.6V12.6H17.6008C17.9322 12.6 18.2008 12.3314 18.2008 12C18.2008 11.6686 17.9322 11.4 17.6008 11.4H12.6006V6.39999Z" fill="#999999"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="price-box center">
+                                                <small class="gray600 t12_w-sm">VAT</small>
+                                                <div class="gray900 t16_w-sm"><strong>{금액표기}</strong>원</div>
+                                            </div>
+                                            <div>
+                                                <span class="order-circle bg-gray50">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M12.6006 6.39999C12.6006 6.06862 12.332 5.79999 12.0006 5.79999C11.6692 5.79999 11.4006 6.06862 11.4006 6.39999V11.4H6.40078C6.06941 11.4 5.80078 11.6686 5.80078 12C5.80078 12.3314 6.06941 12.6 6.40078 12.6H11.4006V17.6C11.4006 17.9314 11.6692 18.2 12.0006 18.2C12.332 18.2 12.6006 17.9314 12.6006 17.6V12.6H17.6008C17.9322 12.6 18.2008 12.3314 18.2008 12C18.2008 11.6686 17.9322 11.4 17.6008 11.4H12.6006V6.39999Z" fill="#999999"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="price-box center">
+                                                <small class="gray600 t12_w-sm">배송비</small>
+                                                <div class="gray900 t16_w-sm"><strong>0</strong>원</div>
+                                            </div>
+                                            <div>
+                                                <span class="order-circle bg-gray50">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M4 9.6C4 9.26863 4.26863 9 4.6 9H19C19.3314 9 19.6 9.26863 19.6 9.6C19.6 9.93137 19.3314 10.2 19 10.2H4.6C4.26863 10.2 4 9.93137 4 9.6Z" fill="#999999"></path>
+                                                        <path d="M4.6 13.8C4.26863 13.8 4 14.0686 4 14.4C4 14.7314 4.26863 15 4.6 15H19C19.3314 15 19.6 14.7314 19.6 14.4C19.6 14.0686 19.3314 13.8 19 13.8H4.6Z" fill="#999999"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="price-box center">
+                                                <small class="gray600 t12_w-lg">주문총액</small>
+                                                <div class="gray900 t24_w-sm"><strong>{합계 금액 표기}</strong>원</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taxable-item-box grid_g24 py24 px24 mb24">
+                        <div class="grid_g12">
+                            <h6 class="t18_w-lg blue500">승인진행중</h6>
+                            <div class="grid_g12">
+                                <p class="t14_w-sm mb20">요청번호 : <span class="w-t14_w-md">20230912185754</span></p>
+                                <div class="flx_btw_vct_g12">
+                                    <div class="card fx1 bd-gray900_ipt">
+                                        <small class="gray600 t14_w-sm">1차 결재자</small>
+                                        <div class="gray900 t16_w-sm mt18 mb4"><strong>최대글자수 공포자 포함 17자까지 가능</strong></div>
+                                        <small class="gray800 t14_w-sm">최대글자수 공포자 포함 20자까지 가능하며</small>
+                                        <div class="flx_btw_vct mt20">
+                                            <small class="blue500 t14_w-lg">승인</small>
+                                            <small class="gray600 t14_w-sm">yyyy-mm-dd</small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path d="M13.5683 9.0343C13.8807 8.72188 14.3873 8.72188 14.6997 9.0343L21.0997 15.4343C21.4121 15.7467 21.4121 16.2533 21.0997 16.5657L14.6997 22.9657C14.3873 23.2781 13.8807 23.2781 13.5683 22.9657C13.2559 22.6533 13.2559 22.1467 13.5683 21.8343L19.4026 16L13.5683 10.1657C13.2559 9.85325 13.2559 9.34672 13.5683 9.0343Z" fill="#101010"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card fx1 bd-gray900_ipt">
+                                        <small class="gray600 t14_w-sm">2차 결재자</small>
+                                        <div class="gray900 t16_w-sm mt18 mb4"><strong>최대글자수 공포자 포함 17자까지 가능</strong></div>
+                                        <small class="gray800 t14_w-sm">최대글자수 공포자 포함 20자까지 가능하며</small>
+                                        <div class="flx_btw_vct mt20">
+                                            <small class="red t14_w-lg">반려</small>
+                                            <small class="gray600 t14_w-sm">yyyy-mm-dd</small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path d="M13.5683 9.0343C13.8807 8.72188 14.3873 8.72188 14.6997 9.0343L21.0997 15.4343C21.4121 15.7467 21.4121 16.2533 21.0997 16.5657L14.6997 22.9657C14.3873 23.2781 13.8807 23.2781 13.5683 22.9657C13.2559 22.6533 13.2559 22.1467 13.5683 21.8343L19.4026 16L13.5683 10.1657C13.2559 9.85325 13.2559 9.34672 13.5683 9.0343Z" fill="#101010"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card fx1 bd-gray900_ipt">
+                                        <small class="gray600 t14_w-sm">3차 결재자</small>
+                                        <div class="gray900 t16_w-sm mt18 mb4"><strong>최대글자수 공포자 포함 17자까지 가능</strong></div>
+                                        <small class="gray800 t14_w-sm">최대글자수 공포자 포함 20자까지 가능하며</small>
+                                        <div class="flx_btw_vct mt20">
+                                            <small class="t14_w-lg">대기</small>
+                                            <small class="gray600 t14_w-sm">yyyy-mm-dd</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid_g8 my20">
+                            <div class="grid_g12" style="grid-template-columns: 126px 1fr">
+                                <div class="t18_w-md-line gray600 py8">승인 요청 메시지</div>
+                                <div class="info">
+                                    <div class="card_md fx1">
+                                        <span class="t14_w-sm-line gray800">결재자에게 전달할 요청사항을 입력해 주세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_g12" style="grid-template-columns: 126px 1fr">
+                                <div class="t18_w-md-line gray600 py8">첨부파일</div>
+                                <div class="info">
+                                    <div class="card_md fx1">
+                                        <span class="t14_w-sm-line gray800">선택된 파일이 없습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="t18_w-lg my12">결제정보</h6>
+                        <h6 class="t18_w-sm">총 결제금액</h6>
+                        <div class="card-blue-outln card_rd8_ipt py16_ipt px40_ipt">
+                            <div class="flx_vct_ct_g40">
+                                <div class="price-box center">
+                                    <small class="gray600 t12_w-sm">상품금액</small>
+                                    <div class="gray900 t16_w-sm"><strong>{금액표기}</strong>원</div>
+                                </div>
+                                <div>
+                                    <span class="order-circle bg-gray50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12.6006 6.39999C12.6006 6.06862 12.332 5.79999 12.0006 5.79999C11.6692 5.79999 11.4006 6.06862 11.4006 6.39999V11.4H6.40078C6.06941 11.4 5.80078 11.6686 5.80078 12C5.80078 12.3314 6.06941 12.6 6.40078 12.6H11.4006V17.6C11.4006 17.9314 11.6692 18.2 12.0006 18.2C12.332 18.2 12.6006 17.9314 12.6006 17.6V12.6H17.6008C17.9322 12.6 18.2008 12.3314 18.2008 12C18.2008 11.6686 17.9322 11.4 17.6008 11.4H12.6006V6.39999Z" fill="#999999"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="price-box center">
+                                    <small class="gray600 t12_w-sm">VAT</small>
+                                    <div class="gray900 t16_w-sm"><strong>{금액표기}</strong>원</div>
+                                </div>
+                                <div>
+                                    <span class="order-circle bg-gray50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12.6006 6.39999C12.6006 6.06862 12.332 5.79999 12.0006 5.79999C11.6692 5.79999 11.4006 6.06862 11.4006 6.39999V11.4H6.40078C6.06941 11.4 5.80078 11.6686 5.80078 12C5.80078 12.3314 6.06941 12.6 6.40078 12.6H11.4006V17.6C11.4006 17.9314 11.6692 18.2 12.0006 18.2C12.332 18.2 12.6006 17.9314 12.6006 17.6V12.6H17.6008C17.9322 12.6 18.2008 12.3314 18.2008 12C18.2008 11.6686 17.9322 11.4 17.6008 11.4H12.6006V6.39999Z" fill="#999999"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="price-box center">
+                                    <small class="gray600 t12_w-sm">배송비</small>
+                                    <div class="gray900 t16_w-sm"><strong>0</strong>원</div>
+                                </div>
+                                <div>
+                                    <span class="order-circle bg-gray50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M4 9.6C4 9.26863 4.26863 9 4.6 9H19C19.3314 9 19.6 9.26863 19.6 9.6C19.6 9.93137 19.3314 10.2 19 10.2H4.6C4.26863 10.2 4 9.93137 4 9.6Z" fill="#999999"/>
+                                            <path d="M4.6 13.8C4.26863 13.8 4 14.0686 4 14.4C4 14.7314 4.26863 15 4.6 15H19C19.3314 15 19.6 14.7314 19.6 14.4C19.6 14.0686 19.3314 13.8 19 13.8H4.6Z" fill="#999999"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="price-box center">
+                                    <small class="gray600 t12_w-lg">주문총액</small>
+                                    <div class="gray900 t24_w-sm"><strong>{합계 금액 표기}</strong>원</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h6 class="t18_w-sm">결제방식</h6>
+                        <div class="card">
+                            <div class="pd12">
+                                <h6 class="t18 gray600">기업 예산 결제</h6>
+                                <div class="flx_btw_vct py20 mb20 gray600 bdb-gray100">
+                                    <p class="t16_w-sm">관리자 승인</p>
+                                    <p class="t18_w-sm"><b>{금액 표기}</b>원</p>
+                                </div>
+                                <div class="flx_ed_vct gray600">
+                                    <p class="t18_w-sm"><b>{금액 표기}</b>원 사용됨</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deliver-box">
+                        <div class="box_bs-area py24 px40 bdb-gray300">
+                            <div class="order-name">
+                                <div class="flx_vct_g8 black t18_w-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12.0006 16.2C11.6692 16.2 11.4006 16.4686 11.4006 16.8C11.4006 17.1313 11.6692 17.4 12.0006 17.4H12.0086C12.34 17.4 12.6086 17.1313 12.6086 16.8C12.6086 16.4686 12.34 16.2 12.0086 16.2H12.0006Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00078 3.40002C6.78575 3.40002 5.80078 4.385 5.80078 5.60002V18.4C5.80078 19.6151 6.78575 20.6 8.00078 20.6H16.0008C17.2158 20.6 18.2008 19.6151 18.2008 18.4V5.60002C18.2008 4.385 17.2158 3.40002 16.0008 3.40002H8.00078ZM7.00078 5.60002C7.00078 5.04774 7.4485 4.60002 8.00078 4.60002H16.0008C16.5531 4.60002 17.0008 5.04774 17.0008 5.60002V18.4C17.0008 18.9523 16.5531 19.4 16.0008 19.4H8.00078C7.4485 19.4 7.00078 18.9523 7.00078 18.4V5.60002Z" fill="black"/>
+                                    </svg>
+                                    발송 정보
+                                </div>
+                            </div>
+                            <div class="order-info">
+                                <dl>
+                                    <dt>발신자</dt>
+                                    <dd>
+                                        <div class="flx_btw">{사용자가 입력한 발신자 정보를 영역 내 표기}</div>
+                                    </dd>
+                                </dl>
+                                <dl><dt>수신자</dt><dd>총 <b>{100}</b>명</dd></dl>
+                                <dl><dt>발송 메시지</dt><dd>{사용자가 입력한 발송 메시지를 영역 내 표기, 영역 내 최대 50자까지 표기}</dd></dl>
+                                <dl><dt>발송 시간</dt><dd><div class="blue500">즉시 발송 or 예약 발송 (yyyy-mm-dd HH:MM)</div></dd></dl>
+                            </div>
+                        </div>
+
+                        <div class="flx_btw_vct_g8 py24 px20">
+                            <div class="grid_g4 fx1">
+                                <h6 class="t14_w-lg">발송 상태</h6>
+                                <select class="df-select_sm">
+                                    <option value="">전체</option>
+                                    <option value="선택1">선택1</option>
+                                </select>
+                            </div>
+                            <div class="grid_g4 fx3">
+                                <h6 class="t14_w-lg">즐겨 찾기</h6>
+                                <div class="flx_btw_vct_g8">
+                                    <select class="df-select_sm fx1">
+                                        <option value="">전체</option>
+                                        <option value="선택1">선택1</option>
+                                    </select>
+                                    <div class="flx_btw_vct_g8 fx2">
+                                        <div class="df-ipt-box-cs_sm_g12 fx1">
+                                            <input type="text" placeholder="기업명, 부서, 이름, 연락처, 주소 검색" class="w-full">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7077 16.5559C14.4898 17.5818 12.9172 18.2 11.2002 18.2C7.3342 18.2 4.2002 15.066 4.2002 11.2C4.2002 7.33402 7.3342 4.20001 11.2002 4.20001C15.0662 4.20001 18.2002 7.33402 18.2002 11.2C18.2002 12.917 17.5821 14.4895 16.5562 15.7073L19.6246 18.7757C19.8589 19.01 19.8589 19.3899 19.6246 19.6242C19.3903 19.8586 19.0104 19.8586 18.776 19.6242L15.7077 16.5559ZM5.4002 11.2C5.4002 7.99676 7.99694 5.40001 11.2002 5.40001C14.4034 5.40001 17.0002 7.99676 17.0002 11.2C17.0002 12.7686 16.3775 14.1918 15.3658 15.2358C15.3415 15.2537 15.3181 15.2737 15.296 15.2957C15.274 15.3178 15.254 15.3411 15.2361 15.3655C14.1921 16.3773 12.7689 17 11.2002 17C7.99694 17 5.4002 14.4033 5.4002 11.2Z" fill="#C8C8C8"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button type="button" class="blue-btn_sm">조회</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pd24">
+                            <div class="flx_btw_ved_g8 mb16">
+                                <small class="t14_w-sm gray600">
+                                    전체 <span class="gray800"><b class="t18">78</b><b>건</b></span> 중 <span class="gray800"><b class="t18 blue500">34</b><b>건</b></span> 완료 / <span class="gray800"><b class="t18 red">44</b><b>건</b></span> 실패
+                                </small>
+                                <button type="button" class="black-btn_sm">선택된 수신자 등록</button>
+                            </div>
+
+                            <div class="round-table-cs fix-table-hd center" style="max-height:500px">
+                                <table class="w-full center" style="max-height:500px">
+                                    <thead>
+                                        <tr>
+                                            <th class="center">
+                                                <input type="checkbox" class="df-check_sm" id="ck_all">
+                                                <label for="ck_all" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </th>
+                                            <th>기업명</th>
+                                            <th>부서명</th>
+                                            <th>이름</th>
+                                            <th>연락처</th>
+                                            <th>발송 상태</th>
+                                            <th>-</th>
+                                            <th>즐겨찾기</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck1" disabled="">
+                                                <label for="ck1" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="gray800">발송 대기</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck2">
+                                                <label for="ck2" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="blue500">발송 완료</span></td>
+                                            <td><button type="button" class="df-btn_sm">재발송</button></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="off" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.49995 2.2666C8.65219 2.2666 8.79124 2.35303 8.85863 2.48955L10.4137 5.63986L13.8911 6.14814C14.0418 6.17016 14.1668 6.27576 14.2138 6.42056C14.2607 6.56537 14.2214 6.72427 14.1124 6.83048L11.5964 9.28102L12.1902 12.743C12.2159 12.8931 12.1542 13.0447 12.031 13.1342C11.9078 13.2237 11.7445 13.2355 11.6098 13.1646L8.49995 11.5292L5.39013 13.1646C5.25536 13.2355 5.09204 13.2237 4.96885 13.1342C4.84566 13.0447 4.78396 12.8931 4.8097 12.743L5.40347 9.28102L2.88752 6.83048C2.77847 6.72427 2.73916 6.56537 2.78611 6.42056C2.83307 6.27576 2.95814 6.17016 3.10876 6.14814L6.58624 5.63986L8.14126 2.48955C8.20865 2.35303 8.3477 2.2666 8.49995 2.2666ZM8.49995 3.5703L7.21063 6.18232C7.15241 6.30026 7.03994 6.38204 6.9098 6.40106L4.02598 6.82258L6.11237 8.85473C6.20672 8.94662 6.24979 9.07907 6.22752 9.20889L5.73522 12.0793L8.31377 10.7232C8.43032 10.6619 8.56957 10.6619 8.68613 10.7232L11.2647 12.0793L10.7724 9.20889C10.7501 9.07907 10.7932 8.94662 10.8875 8.85473L12.9739 6.82258L10.0901 6.40106C9.95995 6.38204 9.84748 6.30026 9.78926 6.18232L8.49995 3.5703Z" fill="#C8C8C8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck3">
+                                                <label for="ck3" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="red">발송 실패</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck1" disabled="">
+                                                <label for="ck1" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="gray800">발송 대기</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck2">
+                                                <label for="ck2" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="blue500">발송 완료</span></td>
+                                            <td><button type="button" class="df-btn_sm">재발송</button></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="off" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.49995 2.2666C8.65219 2.2666 8.79124 2.35303 8.85863 2.48955L10.4137 5.63986L13.8911 6.14814C14.0418 6.17016 14.1668 6.27576 14.2138 6.42056C14.2607 6.56537 14.2214 6.72427 14.1124 6.83048L11.5964 9.28102L12.1902 12.743C12.2159 12.8931 12.1542 13.0447 12.031 13.1342C11.9078 13.2237 11.7445 13.2355 11.6098 13.1646L8.49995 11.5292L5.39013 13.1646C5.25536 13.2355 5.09204 13.2237 4.96885 13.1342C4.84566 13.0447 4.78396 12.8931 4.8097 12.743L5.40347 9.28102L2.88752 6.83048C2.77847 6.72427 2.73916 6.56537 2.78611 6.42056C2.83307 6.27576 2.95814 6.17016 3.10876 6.14814L6.58624 5.63986L8.14126 2.48955C8.20865 2.35303 8.3477 2.2666 8.49995 2.2666ZM8.49995 3.5703L7.21063 6.18232C7.15241 6.30026 7.03994 6.38204 6.9098 6.40106L4.02598 6.82258L6.11237 8.85473C6.20672 8.94662 6.24979 9.07907 6.22752 9.20889L5.73522 12.0793L8.31377 10.7232C8.43032 10.6619 8.56957 10.6619 8.68613 10.7232L11.2647 12.0793L10.7724 9.20889C10.7501 9.07907 10.7932 8.94662 10.8875 8.85473L12.9739 6.82258L10.0901 6.40106C9.95995 6.38204 9.84748 6.30026 9.78926 6.18232L8.49995 3.5703Z" fill="#C8C8C8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck3">
+                                                <label for="ck3" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="red">발송 실패</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck1" disabled="">
+                                                <label for="ck1" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="gray800">발송 대기</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck2">
+                                                <label for="ck2" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="blue500">발송 완료</span></td>
+                                            <td><button type="button" class="df-btn_sm">재발송</button></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="off" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.49995 2.2666C8.65219 2.2666 8.79124 2.35303 8.85863 2.48955L10.4137 5.63986L13.8911 6.14814C14.0418 6.17016 14.1668 6.27576 14.2138 6.42056C14.2607 6.56537 14.2214 6.72427 14.1124 6.83048L11.5964 9.28102L12.1902 12.743C12.2159 12.8931 12.1542 13.0447 12.031 13.1342C11.9078 13.2237 11.7445 13.2355 11.6098 13.1646L8.49995 11.5292L5.39013 13.1646C5.25536 13.2355 5.09204 13.2237 4.96885 13.1342C4.84566 13.0447 4.78396 12.8931 4.8097 12.743L5.40347 9.28102L2.88752 6.83048C2.77847 6.72427 2.73916 6.56537 2.78611 6.42056C2.83307 6.27576 2.95814 6.17016 3.10876 6.14814L6.58624 5.63986L8.14126 2.48955C8.20865 2.35303 8.3477 2.2666 8.49995 2.2666ZM8.49995 3.5703L7.21063 6.18232C7.15241 6.30026 7.03994 6.38204 6.9098 6.40106L4.02598 6.82258L6.11237 8.85473C6.20672 8.94662 6.24979 9.07907 6.22752 9.20889L5.73522 12.0793L8.31377 10.7232C8.43032 10.6619 8.56957 10.6619 8.68613 10.7232L11.2647 12.0793L10.7724 9.20889C10.7501 9.07907 10.7932 8.94662 10.8875 8.85473L12.9739 6.82258L10.0901 6.40106C9.95995 6.38204 9.84748 6.30026 9.78926 6.18232L8.49995 3.5703Z" fill="#C8C8C8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="df-check_sm" id="ck3">
+                                                <label for="ck3" class="flx_ct">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8241 6.77571C19.0584 7.01003 19.0584 7.38993 18.8241 7.62424L10.0241 16.4242C9.78977 16.6586 9.40987 16.6586 9.17555 16.4242L5.17555 12.4242C4.94124 12.1899 4.94124 11.81 5.17555 11.5757C5.40987 11.3414 5.78977 11.3414 6.02408 11.5757L9.59982 15.1514L17.9756 6.77571C18.2099 6.5414 18.5898 6.5414 18.8241 6.77571Z" fill="#999999"></path>
+                                                    </svg>
+                                                </label>
+                                            </td>
+                                            <td>CastingN</td>
+                                            <td>기획팀</td>
+                                            <td>조정훈</td>
+                                            <td>010-3258-3455</td>
+                                            <td><span class="red">발송 실패</span></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="star">
+                                                    <svg class="on" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23335 2.66675C8.38559 2.66675 8.52464 2.75318 8.59203 2.8897L10.1471 6.04L13.6245 6.54829C13.7752 6.5703 13.9002 6.67591 13.9472 6.82071C13.9941 6.96551 13.9548 7.12441 13.8458 7.23063L11.3298 9.68116L11.9236 13.1431C11.9493 13.2932 11.8876 13.4449 11.7644 13.5344C11.6412 13.6239 11.4779 13.6357 11.3432 13.5648L8.23335 11.9294L5.12353 13.5648C4.98876 13.6357 4.82544 13.6239 4.70225 13.5344C4.57906 13.4449 4.51736 13.2932 4.5431 13.1431L5.13687 9.68116L2.62092 7.23063C2.51187 7.12441 2.47256 6.96551 2.51951 6.82071C2.56646 6.67591 2.69154 6.5703 2.84216 6.54829L6.31964 6.04L7.87466 2.8897C7.94205 2.75318 8.0811 2.66675 8.23335 2.66675Z" fill="#0E89E8"/>
+                                                    </svg>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flx_ct_vct_g12 py40">
+                        <button type="button" class="blue-btn_xl" style="width:116px;">목록으로</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
