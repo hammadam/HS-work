@@ -724,6 +724,10 @@
         .rv_logo{
           @include mix.flexbox(row, nowrap, flex-start, center, null);
           @include mix.paddingY(14px);
+
+          svg{
+            width:123px;
+          }
         }
 
         .rv_desc{
