@@ -90,6 +90,20 @@
       border-radius: 50%;
       background: var.$blue;
       box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+
+      &:hover, &:focus, &:active{
+        background:var.$blue-dark;
+      }
+
+      &:nth-child(2){
+        
+        &:hover .background-path, 
+        &:focus .background-path, 
+        &:active .background-path{
+          fill: #192551;
+          fill-opacity: 1;
+        }
+      }
     }
   }
 
@@ -99,6 +113,7 @@
     .go_top{
 
       &:hover .background-path, 
+      &:focus .background-path, 
       &:active .background-path{
         fill: #192551;
         fill-opacity: 1;
@@ -384,7 +399,7 @@
         @include mix.paddingX(180px);
       }
       .goodpoint_box{
-        @include mix.flexbox(row, nowrap, space-around, flex-start, 80px);
+        @include mix.flexbox(row, nowrap, space-around, center, 80px);
         @include mix.paddingY(64px);
         border-bottom:1px solid rgba(0, 5, 10, 0.10);
 
@@ -629,6 +644,10 @@
         border-radius: 50%;
         background: var.$blue;
         box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+
+        svg{
+          width:28px;
+        }
       }
     }
   
