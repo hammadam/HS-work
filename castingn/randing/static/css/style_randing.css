@@ -767,9 +767,12 @@
     line-height: 20px;
   }
   .ctn_randing .slide_sp_wr .sd_box .rv_desc .rv_quotation {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 20px;
+    right: 20px;
+  }
+  .ctn_randing .slide_sp_wr .sd_box .rv_desc .rv_quotation svg {
+    width: 26px;
+    height: 22px;
   }
   .ctn_randing .slide_sp_wr .sd_box .sd_info .circle_list {
     padding-left: 8px;
