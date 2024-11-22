@@ -757,6 +757,9 @@
     padding-bottom: 14px;
     padding-block-end: 14px;
   }
+  .ctn_randing .slide_sp_wr .sd_box .rv_logo svg {
+    width: 123px;
+  }
   .ctn_randing .slide_sp_wr .sd_box .rv_desc {
     padding-top: 20px;
     padding-block-start: 20px;
