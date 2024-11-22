@@ -102,6 +102,11 @@
           fill: #192551;
           fill-opacity: 1;
         }
+        &:hover .stroke-path, 
+        &:focus .stroke-path, 
+        &:active .stroke-path{
+          stroke: var.$blue-dark;
+        }
       }
     }
   }

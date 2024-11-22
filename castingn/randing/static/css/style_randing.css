@@ -114,6 +114,9 @@
   fill: #192551;
   fill-opacity: 1;
 }
+.floating_menu .flt_top .btn_flt:nth-child(2):hover .stroke-path, .floating_menu .flt_top .btn_flt:nth-child(2):focus .stroke-path, .floating_menu .flt_top .btn_flt:nth-child(2):active .stroke-path {
+  stroke: #192551;
+}
 .floating_menu .flt_bottom {
   margin-top: 64px;
 }
