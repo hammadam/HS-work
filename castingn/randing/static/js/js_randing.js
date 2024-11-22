@@ -80,8 +80,13 @@ $(function() {
   
   const swiperReview = new Swiper(".swiper_review", {
     loop: true,
+    speed : 1000,
     slidesPerView: 3,
     spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".rv_pagination",
       clickable: true,
@@ -95,7 +100,7 @@ $(function() {
     breakpoints: {
       769: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        // spaceBetween: 0,
       },
     },
   });
@@ -103,39 +108,23 @@ $(function() {
   
   const swiperRequest = new Swiper(".swiper_request", {
     loop: true,
+    speed : 1000,
     slidesPerView: 4,
     spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".rq_pagination",
       clickable: true,
     },
-    on: {
-      slideChange: function () {
-        const prevSlide = this.slides[this.previousIndex];
-        const currentSlide = this.slides[this.activeIndex];
-  
-        if (this.realIndex === 0) {
-          // 첫 번째 슬라이드로 돌아왔을 때, 이전 슬라이드 숨김
-          prevSlide.style.visibility = "hidden";
-        } else {
-          // 다른 슬라이드로 이동하면 이전 슬라이드 표시
-          prevSlide.style.visibility = "visible";
-        }
-      },
-      init: function () {
-        // 초기 상태에서 첫 번째 슬라이드의 왼쪽 숨김
-        const prevSlide = this.slides[this.slides.length - 1]; // 루프 모드에서는 마지막 슬라이드가 이전처럼 보임
-        if (prevSlide) {
-          prevSlide.style.visibility = "hidden";
-        }
-      },
-    },
     breakpoints: {
       769: {
         slidesPerView: 1,
-        spaceBetween: 0,
       },
     },
   });
+  
 });
 // ======= swiper 이벤트 끝  ======= 
