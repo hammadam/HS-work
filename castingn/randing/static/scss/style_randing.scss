@@ -730,9 +730,13 @@
           line-height: 20px;
 
           .rv_quotation{
-            position:absolute;
-            top:24px;
-            right:24px;
+            top:20px;
+            right:20px;
+
+            svg{
+              width:26px;
+              height:22px;
+            }
           }
         }
 
