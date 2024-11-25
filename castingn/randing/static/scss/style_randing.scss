@@ -171,6 +171,8 @@
 
   .tit_wr{
     @include mix.flexbox(column, nowrap, center, center,40px);
+    text-align:center; 
+
     .tit_sm{
       font-size:var.$font-size-lg;
       font-weight:var.$font-w-light;
@@ -674,17 +676,17 @@
           width:23%;
 
           img.m_hide, svg.m_hide{
-            transform:scale(0.5);
+            width:86px;
           }
 
-          // &:first-child{
-          //   img.m_hide, svg.m_hide{
-          //     transform-origin:center left;
-          //   }
-          // }
+          &:first-child{
+
+            img.m_hide{
+              width:128px;
+            }
+          }
 
           &.process_img_logo{
-            padding-top:20px;
 
             img{
               width:80%;
@@ -694,6 +696,7 @@
 
         .arrow_wr{
           width:9%;
+          padding-top:28px;
 
           svg.m_hide{
             transform:scale(0.4);
@@ -1124,10 +1127,6 @@
 
     .content07{
       background:#F4F4F7;
-
-      .tit_wr{
-        text-align:center;
-      }
   
       .slide_sp_wr{
         width:100%;

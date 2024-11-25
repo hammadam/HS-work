@@ -197,6 +197,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  text-align: center;
 }
 .ctn_randing .tit_wr .tit_sm {
   font-size: 36px;
@@ -685,16 +686,17 @@
     width: 23%;
   }
   .ctn_randing .content02 .process .process_img img.m_hide, .ctn_randing .content02 .process .process_img svg.m_hide {
-    transform: scale(0.5);
+    width: 86px;
   }
-  .ctn_randing .content02 .process .process_img.process_img_logo {
-    padding-top: 20px;
+  .ctn_randing .content02 .process .process_img:first-child img.m_hide {
+    width: 128px;
   }
   .ctn_randing .content02 .process .process_img.process_img_logo img {
     width: 80%;
   }
   .ctn_randing .content02 .process .arrow_wr {
     width: 9%;
+    padding-top: 28px;
   }
   .ctn_randing .content02 .process .arrow_wr svg.m_hide {
     transform: scale(0.4);
@@ -1130,9 +1132,6 @@
   }
   .ctn_randing .content07 {
     background: #F4F4F7;
-  }
-  .ctn_randing .content07 .tit_wr {
-    text-align: center;
   }
   .ctn_randing .content07 .slide_sp_wr {
     width: 100%;
