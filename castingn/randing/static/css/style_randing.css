@@ -178,12 +178,6 @@
 .ctn_randing .rel {
   position: relative;
 }
-.ctn_randing .t_show {
-  display: none !important;
-}
-.ctn_randing .t_hide {
-  display: block !important;
-}
 .ctn_randing .m_show {
   display: none !important;
 }
