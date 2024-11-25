@@ -98,6 +98,9 @@ $(function() {
   
     // 반응형 설정
     breakpoints: {
+      1200: {
+        slidesPerView: 2,
+      },
       769: {
         slidesPerView: 1,
         // spaceBetween: 0,
@@ -108,8 +111,9 @@ $(function() {
   
   const swiperRequest = new Swiper(".swiper_request", {
     loop: true,
+    loopAdditionalSlides : 1,
     speed : 1000,
-    slidesPerView: 4,
+    slidesPerView: 3.3,
     spaceBetween: 30,
     autoplay: {
       delay: 2500,
@@ -120,6 +124,9 @@ $(function() {
       clickable: true,
     },
     breakpoints: {
+      1200: {
+        slidesPerView: 2.5,
+      },
       769: {
         slidesPerView: 1,
       },

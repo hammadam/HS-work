@@ -149,11 +149,20 @@
 
   .sec_wrap{
     width:1440px;
+    // width:1200px;
     margin:0 auto;
   }
 
   .rel{
     position: relative;
+  }
+
+  .t_show {
+    display: none !important;
+  }
+
+  .t_hide {
+    display: block !important;
   }
 
   .m_show {
@@ -472,6 +481,10 @@
         z-index:2;
         transform:translate(-50%,-50%);
       }
+
+      .count_bg_img1200{
+        display:none;
+      }
       .count_wr{
         @include mix.flexbox(row, nowrap, space-around, center, 0);
         position:absolute;
@@ -480,11 +493,11 @@
         z-index:3;
         width:1440px;
         transform:translate(-50%,-50%);
-        background:#192551;
       }
 
       .count_box{
         flex:1 1 33%;
+        transition:0.2s;
       }
       .count_big{
         @include mix.flexbox(row, nowrap, center, baseline, 0);
@@ -630,6 +643,157 @@
   }
 }
 
+@media all and (max-width:1580px){
+  .ctn_randing{
+
+    .content04{
+
+      .count_bg_img{
+        display:none;
+      }
+      .count_bg_img1200{
+        display:block;
+      }
+      .count_wr{
+        max-width:1120px;
+        width:calc(100vw - 132px);
+      }
+    }
+  }
+}
+
+@media all and (max-width:1439px){
+  .ctn_randing{
+
+    section{
+      @include mix.paddingX(40px);
+    }
+    
+    .sec_wrap{
+      width:100%;
+    }
+
+    .content02 {
+
+      .process{
+        @include mix.paddingX(0);
+
+        .process_img{
+          width:23%;
+
+          img.m_hide, svg.m_hide{
+            transform:scale(0.5);
+          }
+
+          // &:first-child{
+          //   img.m_hide, svg.m_hide{
+          //     transform-origin:center left;
+          //   }
+          // }
+
+          &.process_img_logo{
+            padding-top:20px;
+
+            img{
+              width:80%;
+            }
+          }
+        }
+
+        .arrow_wr{
+          width:9%;
+
+          svg.m_hide{
+            transform:scale(0.4);
+          }
+        }
+      }
+    }
+
+    .content03{
+
+      .goodpoint_wr{
+
+  
+        .goodpoint{
+          @include mix.paddingX(40px);
+        }
+        .goodpoint_box{
+          @include mix.flexbox(row, nowrap, space-around, center,24px);
+          @include mix.paddingY(64px);
+          border-bottom:1px solid rgba(0, 5, 10, 0.10);
+  
+  
+          &:first-child{
+            @include mix.padding-block-start(0px);
+            border-bottom:0;
+          }
+  
+          &:last-child{
+            @include mix.padding-block-end(0px);
+            border-bottom:0;
+          }
+  
+          .img_wr{
+            @include mix.padding(42px, 28px);
+            width:440px;
+  
+            img{
+              width:100%;
+            }
+          }
+  
+          .txt_wr{
+            width:620px;
+  
+            .txt_tit{
+              margin-bottom:24px;
+              font-size: var.$font-size-lg;
+              font-weight: var.$font-w-bold;
+              line-height: 48px;
+            }
+          }
+  
+          &:nth-child(4),
+          &:nth-child(5){
+            .img_wr{
+              order:2;
+            }
+          }
+        }
+      }
+    }
+
+    .content04{
+      overflow:hidden;
+    }
+
+    .content05{
+      .sec_wrap{
+        @include mix.paddingX(40px);
+        width:100%;
+      }
+      .slide_sp_wr{
+        .swiper-button-next{
+          right:-10px;
+        }
+        .swiper-button-prev{
+          left:-10px;
+        }
+      } 
+
+    }
+
+    .content07{
+
+      .slide_sp_wr{
+        width:calc(100% + 40px);
+        // margin-left:40px;
+        overflow:hidden;
+      }
+    }
+  }
+}
 
 @media all and (max-width:769px){
   .floating_menu{
@@ -811,18 +975,18 @@
   
       .process{
         @include mix.flexbox(row, nowrap, space-between, flex-start, null);
-        @include mix.paddingX(0px);
         margin-top:64px;
         
         .process_img{
           width:70px;
 
           img{
-            width:100%;
+            width:100% !important;
           }
   
           &.process_img_logo{
             max-width:48px;
+            padding-top:0;
           }
   
           p{
@@ -905,6 +1069,10 @@
         position:static;
         transform:translate(0%,0%);
       }
+
+      .count_bg_img1200{
+        display:none;
+      }
       .count_wr{
         @include mix.flexbox(row, nowrap, space-around, center, 0);
         position:static;
@@ -937,6 +1105,10 @@
 
     .content05{
       @include mix.padding-block-start(64px);
+
+      .sec_wrap{
+        @include mix.paddingX(0);
+      }
     }
 
     .content06{
